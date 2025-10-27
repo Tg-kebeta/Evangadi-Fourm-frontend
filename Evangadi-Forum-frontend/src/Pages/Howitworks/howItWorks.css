@@ -1,0 +1,65 @@
+
+
+
+:root {
+  --evangadi-orange: #ffa039;
+  --evangadi-blue: #0d6efd;
+  --text-dark: #2c3e50;
+  --text-start: #6c757d;
+  --bg-light: #f8f9fa;
+}
+
+
+.cta a.btn {
+  border-radius: 30px;
+} 
+ .howitwork-page {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.step-card ul {
+  padding-left: 1.2rem;
+}
+.step-card:hover {
+  background-color: inherit;
+}
+
+.step-card ul li {
+  margin-bottom: 0.5rem;
+}
+.step-card:hover {
+  all: unset;
+}
+/* Custom styles for better text visibility */
+.guidelines h2,
+.guidelines h5 {
+  color: #222;           
+  font-weight: 700;      
+}
+
+.guidelines ul  li{
+  color: #333;          
+  font-weight: 600;      
+  line-height: 1.6;      
+}
+
+.guidelines li strong {
+  color: #000;           
+}
+
+
+.hero {
+  background: linear-gradient(to right, #007bff, #6610f2);
+}
+
+.cta {
+  background-color: #343a40;
+}
+
+.list-group-item {
+  background-color: transparent;
+  border: none;
+  
+}
+
+

@@ -1,0 +1,192 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.answersSection {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.answersSection h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.answerItem {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.answerHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  margin-bottom: 5px;
+}
+
+.answerAuthor {
+  font-weight: 600;
+  color: #ff7f2a;
+}
+
+.answerDate {
+  color: #888;
+}
+
+.answerText {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.noAnswers {
+  font-style: italic;
+  color: #555;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #666;
+}
+
+.error {
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  color: #e74c3c;
+  background-color: #fdf2f2;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* === Action Buttons === */
+.actionButtons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.editButton,
+.deleteButton {
+  padding: 8px 16px;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.editButton {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.editButton:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+.deleteButton {
+  background-color: #ef4444;
+  color: white;
+}
+
+.deleteButton:hover {
+  background-color: #dc2626;
+  transform: translateY(-2px);
+}
+
+/* Add Answer Button */
+.submitButton {
+  background-color: #ff7f2a;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #e66b1e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  
+  .answerItem {
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .answerHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  .answerAuthor {
+    font-size: 0.9rem;
+  }
+  
+  .answerDate {
+    font-size: 0.8rem;
+  }
+  
+  .answerText {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .actionButtons {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .editButton,
+  .deleteButton {
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+  
+  .answerItem {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .answerText {
+    font-size: 0.9rem;
+  }
+  
+  .editButton,
+  .deleteButton {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}

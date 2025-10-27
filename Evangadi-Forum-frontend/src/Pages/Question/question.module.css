@@ -1,0 +1,257 @@
+/* 
+      .question_container {
+  padding: 100px 0px 0px; 
+  width: 100%;
+  flex: 1;
+}
+
+.question_headtitle {
+  text-align: center;
+}
+
+.question_li {
+  margin-bottom: 30px;
+}
+
+.question_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0px auto;
+  align-items: center;
+}
+
+.question_headtitle2 {
+  border-radius: 20px;
+  background-color: white;
+  width: 100%;
+  padding: 50px 50px 30px;  
+  margin-bottom: 50px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.question_li h2 {
+  margin-bottom: -5px;
+  margin-left: 40px;
+}
+
+.question_title {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #DDDDDD;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.question_title:focus,
+.question_description:focus {
+  outline: none;
+  border: 3px solid #FE8402;
+}
+
+.question_description {
+  width: 100%;
+  height: 150px;
+  padding: 12px 15px;
+  border: 2px solid #DDDDDD;
+  border-radius: 10px;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+.question_button {
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 5px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #516CF0;
+  align-self: flex-start;
+  margin-left: -15px;
+}
+
+.question_button:hover {
+  cursor: pointer;
+  background-color: #FE8402;
+}
+
+.question_wrapper h4 {
+  margin-left: 40px;
+}
+
+/* New Styles for Inline Messages */
+/* .error {
+  color: #d93025;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.success {
+  color: #188038;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.inputError {
+  border: 2px solid #d93025;
+} */ 
+ .question_container {
+  padding: 100px 0 0;
+  width: 100%;
+  flex: 1;
+}
+
+.question_headtitle {
+  text-align: center;
+}
+
+.question_li {
+  margin-bottom: 30px;
+}
+
+.question_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.question_headtitle2 {
+  border-radius: 20px;
+  background-color: white;
+  width: 100%;
+  padding: 50px 50px 30px;
+  margin-bottom: 50px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.question_li h2 {
+  margin-bottom: -5px;
+  margin-left: 40px;
+}
+
+.question_title {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #DDDDDD;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.question_title:focus,
+.question_description:focus {
+  outline: none;
+  border: 3px solid #FE8402;
+}
+
+.question_description {
+  width: 100%;
+  height: 150px;
+  padding: 12px 15px;
+  border: 2px solid #DDDDDD;
+  border-radius: 10px;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+.question_button {
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 5px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #516CF0;
+  align-self: flex-start;
+  margin-left: -15px;
+}
+
+.question_button:hover {
+  cursor: pointer;
+  background-color: #FE8402;
+}
+
+.question_wrapper h4 {
+  margin-left: 40px;
+}
+
+/* Inline Messages */
+.error {
+  color: #d93025;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.success {
+  color: #188038;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.inputError {
+  border: 2px solid #d93025;
+}
+
+/* ============================
+   RESPONSIVE STYLES
+============================ */
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .question_wrapper {
+    width: 90%;
+  }
+
+  .question_headtitle2 {
+    padding: 40px 30px 25px;
+  }
+
+  .question_li h2,
+  .question_wrapper h4 {
+    margin-left: 20px;
+  }
+
+  .question_button {
+    margin-left: 0;
+    width: 180px;
+  }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 600px) {
+  .question_container {
+    padding: 60px 0 0;
+  }
+
+  .question_wrapper {
+    width: 95%;
+  }
+
+  .question_headtitle2 {
+    padding: 25px 20px 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .question_li h2,
+  .question_wrapper h4 {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .question_title,
+  .question_description {
+    font-size: 0.95rem;
+  }
+
+  .question_button {
+    width: 100%;
+    margin-left: 0;
+    align-self: center;
+    font-size: 15px;
+  }
+}

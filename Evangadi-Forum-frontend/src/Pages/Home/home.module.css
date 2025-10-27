@@ -1,0 +1,144 @@
+
+/* Container for the entire page content */
+.container {
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* --- Top Section --- */
+
+.topSection {
+  display: none; /* Hide the current structured top section to match the image layout */
+}
+
+/* --- Welcome + Search Section (Adjusted) --- */
+
+.userActions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Start from the left */
+  margin-bottom: 20px;
+}
+
+.welcomeText {
+  align-self: flex-end; /* Pushes the 'Welcome' text to the right side */
+  font-size: 1.1rem;
+  color: #333;
+  margin-right: 20px; /* Space from the right edge */
+  margin-bottom: 20px; /* Space below the welcome text */
+}
+
+.username {
+  font-weight: bold;
+  color: #d17805; /* Use a color similar to 'saron' in the image */
+}
+
+/* --- Ask Question Button --- */
+/* The button is moved here as it's structurally closer to the search bar in the image */
+
+.askButtonContainer {
+  /* A container to align the Ask Question button */
+  margin-bottom: 10px; /* Space above the search bar */
+}
+
+.askButton {
+  background-color: #007bff; /* A prominent blue color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s;
+}
+
+.askButton:hover {
+  background-color: #0056b3;
+}
+
+/* --- Search Bar --- */
+
+.searchBox {
+  display: flex;
+  width: 100%;
+  margin-bottom: 40px; /* Space between search and question list */
+}
+
+.searchBox input {
+  flex-grow: 1; /* Take up all available space */
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  /* Remove the default search button for the image look, but keep the input style */
+}
+
+.searchBox input::placeholder {
+  color: #999;
+}
+
+.searchBox button {
+  display: none; /* Hide the search button to match the image where only input is present */
+}
+
+
+/* --- Question List Items (Assuming QuestionList component uses its own class/structure) --- */
+/* This section styles the individual question previews to look like the image */
+
+.questionsSection {
+  width: 100%;
+}
+
+.sectionHeader {
+  display: none; /* Hide the "Recent Questions" header to match the image */
+}
+
+/* Styling for an individual question item - you might need to apply these in your QuestionList component */
+.questionItem {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee; /* Separator line between questions */
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.questionItem:hover {
+  background-color: #f9f9f9;
+}
+
+.profileIcon {
+  font-size: 2.5rem; /* Larger icon */
+  color: #888;
+  margin-right: 15px;
+}
+
+.questionContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  /* Align question text and name */
+}
+
+.usernameDisplay {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+.questionTitle {
+  font-size: 1.1rem;
+  color: #007bff; /* Blue question link color */
+  font-weight: 400;
+  text-decoration: none; /* Remove underline from the link */
+}
+
+.arrowIcon {
+  font-size: 1.5rem;
+  color: #555;
+  margin-left: 15px;
+}

@@ -1,0 +1,48 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.7;
+  color: #333;
+  background-color: #f8f9fa; /* Light background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #3b2063; /* Dark purple for main title */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #5861ae; /* Lighter blue */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.intro {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #ff7f2a; /* Orange for section headings */
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #495057; /* Darker grey for body text */
+}
+
+strong {
+  color: #3b2063; /* Dark purple for strong text */
+}

@@ -1,0 +1,248 @@
+
+
+.login_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #f8f8f8;
+  background-image: url("../../assets/BG.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  gap: 40px;
+  border-radius: 20px;
+  font-family:sans-serif;
+  
+}
+
+
+
+.login_wrapper {
+  width: 100%;
+  max-width: 420px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px 30px 40px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+
+   
+.login_title {
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.login_form small {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.login_form small a {
+  color: #fe8402;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login_form small a:hover {
+  text-decoration: underline;
+}
+
+
+.login_form_input input {
+  width: 100%;
+  font-size: 15px;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.login_form_input input:focus {
+  outline: none;
+  border-color: #fe8402;
+}
+
+/* Grouped First/Last name */
+.first_last {
+  display: flex;
+  gap: 10px;
+}
+
+.first_last input {
+  flex: 1;
+}
+
+/* Password visibility icon */
+.passwordWrapper {
+  position: relative;
+}
+
+.passwordWrapper input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.eyeIcon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+  cursor: pointer;
+  font-size: 18px;
+  transition: color 0.2s ease;
+  padding-bottom: 15px;
+}
+
+.eyeIcon:hover {
+  color: #fe8402;
+}
+
+/* =========================
+   Error & Success Messages
+========================= */
+.error {
+  color: #d93025;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.success {
+  color: #188038;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.inputError {
+  border: 2px solid #d93025 !important;
+}
+
+/* =========================
+   Buttons & Agreement
+========================= */
+.agree2 {
+  font-size: 0.85rem;
+  text-align: center;
+  margin: 10px 0 20px;
+  color: #666;
+}
+
+.agree2 a {
+  color: #fe8402;
+  text-decoration: none;
+}
+
+.agree2 a:hover {
+  text-decoration: underline;
+}
+
+.login_form_input button {
+  width: 100%;
+  padding: 12px;
+  background-color: #fe8402;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.login_form_input button:hover {
+  background-color: #e67c00;
+  transform: translateY(-2px);
+}
+
+/* Already have account link */
+.account p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.account p a {
+  color: #fe8402;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.account p a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Right-Side Description
+========================= */
+.Evangadi_description {
+  width: 35%;
+  max-width: 480px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.title_link a {
+  color: #fe8402;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.title {
+  color: #4b456f;
+  font-size: 2rem;
+  margin: 10px 0 20px;
+}
+
+.Evangadi_description p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.aboutButton {
+  background-color: #fe8402;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.aboutButton:hover {
+  background-color: #e67c00;
+}
+
+/* =========================
+   Responsive Design
+========================= */
+@media (max-width: 768px) {
+  .login_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 15px;
+  }
+
+  .Evangadi_description {
+    width: 90%;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .aboutButton {
+    font-size: 0.9rem;
+  }
+}

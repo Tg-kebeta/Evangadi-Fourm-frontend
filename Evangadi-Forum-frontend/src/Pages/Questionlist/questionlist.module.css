@@ -1,0 +1,183 @@
+
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+
+.questionTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.questionTable th,
+.questionTable td {
+  padding: 16px 20px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  font-size: 1rem;
+  color: #333;
+}
+
+.questionTable th {
+  background-color: #f1f1f1;
+  font-weight: 600;
+}
+
+.questionRow:hover {
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+
+.profileIcon {
+  font-weight: bold;
+  background-color: #eee;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+/* =========================
+   Pagination
+========================= */
+.pagination {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.pagination button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #fe8402;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #e67c00;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-weight: 600;
+  color: #333;
+  align-self: center;
+}
+
+/* =========================
+   Responsive Design
+========================= */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .container {
+    padding: 15px;
+  }
+
+  .questionTable th,
+  .questionTable td {
+    padding: 12px 10px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile - Table turns into stacked cards */
+@media (max-width: 768px) {
+  .questionTable,
+  .questionTable thead,
+  .questionTable tbody,
+  .questionTable th,
+  .questionTable td,
+  .questionTable tr {
+    display: block;
+    width: 100%;
+  }
+
+  .questionTable thead {
+    display: none; /* Hide header on small screens */
+  }
+
+  .questionTable tr {
+    margin-bottom: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+  }
+
+  .questionTable td {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 0.95rem;
+  }
+
+  .questionTable td::before {
+    content: attr(data-label); /* Use column headers as labels */
+    font-weight: 600;
+    color: #666;
+  }
+
+  .profileIcon {
+    width: 32px;
+    height: 32px;
+    font-size: 0.9rem;
+  }
+
+  .pagination {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .pagination button {
+    width: 100%;
+  }
+
+  .pagination span {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .questionTable tr {
+    padding: 10px;
+  }
+
+  .questionTable td {
+    font-size: 0.9rem;
+  }
+
+  .pagination span {
+    font-size: 0.85rem;
+  }
+}
