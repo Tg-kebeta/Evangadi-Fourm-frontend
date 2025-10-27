@@ -6,10 +6,11 @@ const axiosBase = axios.create({
   // baseURL:"http://localhost:2025",
   // baseURL: "https://forumevangadibackend.natesirak.com",
   // baseURL: "https://evangadiba.solomonhunegnaw.com",
-  baseURL:"https://evangadiforum.ekhlasabdulmelik.com/"
+  baseURL: "https://evangadiforum.ekhlasabdulmelik.com"
+  
 });
 
-// Add token to all requests automatically
+
 axiosBase.interceptors.request.use(
   (config) => {
     const token = getToken();

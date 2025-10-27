@@ -29,10 +29,16 @@ function App() {
   const checkUser2 = async () => {
     try {
       const token = getToken(); // Use the helper
+      // if (!token) {
+      //   navigate("/login");
+      //   return;
+      // }
       if (!token) {
-        navigate("/login");
+        if (window.location.pathname !== "/login") navigate("/login");
+        setAppLoading(false);
         return;
       }
+
 
       const { data } = await axios.get("api/user/checkUser");
       // No need for headers - axiosConfig handles it automatically
