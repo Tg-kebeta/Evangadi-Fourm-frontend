@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, {useContext, useState, useEffect } from "react";
 import classes from "./header.module.css";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { UserContext } from "../../component/Dataprovider/DataProvider";
 
 const Navbar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [userData, setUserData] = useContext(UserContext); 
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -19,6 +21,7 @@ const Navbar = () => {
     if (isLoggedIn) {
       localStorage.removeItem("token");
       setIsLoggedIn(false);
+      setUserData(null);
       navigate("/login");
     } else {
       navigate("/login");
