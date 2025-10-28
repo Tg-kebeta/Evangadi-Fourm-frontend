@@ -69,7 +69,7 @@ const QuestionList = ({ questions: questionsProp = [] }) => {
             <th>Title</th>
             <th>Description</th>
             <th>User</th>
-            <th>User ID</th>
+          
           </tr>
         </thead>
         <tbody>
